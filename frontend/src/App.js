@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleSubmit = async () => {
-    const res = await axios.post("http://127.0.0.1:5000/predict", form);
+    const res = await axios.post("https://diabetes-1-6p3j.onrender.com", form);
     setResult(
       res.data.prediction + " (Prob: " + res.data.probability.toFixed(2) + ")",
     );
