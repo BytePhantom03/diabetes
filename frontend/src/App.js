@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleSubmit = async () => {
-    const res = await axios.post("https://diabetes-1-6p3j.onrender.com", form);
+    const res = await axios.post("https://diabetes-1-6p3j.onrender.com/predict", form);
     setResult(
       res.data.prediction + " (Prob: " + res.data.probability.toFixed(2) + ")",
     );
